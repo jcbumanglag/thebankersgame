@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{104DCA2D-CB58-4810-B7B6-08A0D66F3981}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bankers_game_proto</RootNamespace>
+    <AssemblyName>bankers game-proto</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auctionp4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auctionp4.designer.cs">
+      <DependentUpon>Auctionp4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Curvebutton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Drawcardp4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawcardp4.designer.cs">
+      <DependentUpon>Drawcardp4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="howtoplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="howtoplay.Designer.cs">
+      <DependentUpon>howtoplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ranking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ranking.Designer.cs">
+      <DependentUpon>Ranking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gamewheel.cs" />
+    <Compile Include="Loadscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loadscreen.designer.cs">
+      <DependentUpon>Loadscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mains1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mains1.Designer.cs">
+      <DependentUpon>mains1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map.Designer.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrientedTextLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="p4_gameplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="p4_gameplay.designer.cs">
+      <DependentUpon>p4_gameplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player Select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player Select.Designer.cs">
+      <DependentUpon>Player Select.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tradp4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tradp4.designer.cs">
+      <DependentUpon>tradp4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wheeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wheeler.designer.cs">
+      <DependentUpon>Wheeler.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Auctionp4.resx">
+      <DependentUpon>Auctionp4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drawcardp4.resx">
+      <DependentUpon>Drawcardp4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="howtoplay.resx">
+      <DependentUpon>howtoplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loadscreen.resx">
+      <DependentUpon>Loadscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mains1.resx">
+      <DependentUpon>mains1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrientedTextLabel.resx">
+      <DependentUpon>OrientedTextLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="p4_gameplay.resx">
+      <DependentUpon>p4_gameplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player Select.resx">
+      <DependentUpon>Player Select.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ranking.resx">
+      <DependentUpon>Ranking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tradp4.resx">
+      <DependentUpon>tradp4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wheeler.resx">
+      <DependentUpon>Wheeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fa2d98d6414563c58d66663dd6b2e1c5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-gif-maker.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\u9jgR5x0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_t.png" />
+    <None Include="Resources\profile_r.png" />
+    <None Include="Resources\profile_l.png" />
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\playing-cards.png" />
+    <None Include="Resources\philippine-peso.png" />
+    <None Include="Resources\quits.gif" />
+    <None Include="Resources\sellprop.png" />
+    <None Include="Resources\sellprop_r.png" />
+    <None Include="Resources\sellprop_t.png" />
+    <None Include="Resources\sellprop_l.png" />
+    <None Include="Resources\tower_t.png" />
+    <None Include="Resources\tower_r.png" />
+    <None Include="Resources\tower_l.png" />
+    <None Include="Resources\mall_r.png" />
+    <None Include="Resources\mall_t.png" />
+    <None Include="Resources\mall_l.png" />
+    <None Include="Resources\market_r.png" />
+    <None Include="Resources\market_t.png" />
+    <None Include="Resources\market_l.png" />
+    <None Include="Resources\school_l.png" />
+    <None Include="Resources\school_t.png" />
+    <None Include="Resources\school_r.png" />
+    <None Include="Resources\school.png" />
+    <None Include="Resources\market.png" />
+    <None Include="Resources\mall.png" />
+    <None Include="Resources\tower.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\tips.gif" />
+    <None Include="Resources\property.gif" />
+    <None Include="Resources\score.gif" />
+    <None Include="Resources\upgraded.wav" />
+    <None Include="Resources\utilsound.wav" />
+    <None Include="Resources\utilsound.mp3" />
+    <None Include="Resources\reverse.wav" />
+    <None Include="Resources\pass.wav" />
+    <None Include="Resources\p4.wav" />
+    <None Include="Resources\p3.wav" />
+    <None Include="Resources\p2.wav" />
+    <None Include="Resources\p1.wav" />
+    <None Include="Resources\trainstat.wav" />
+    <None Include="Resources\Timesup.wav" />
+    <None Include="Resources\rule8.png" />
+    <None Include="Resources\rule7.png" />
+    <None Include="Resources\rule6.png" />
+    <None Include="Resources\rule5.png" />
+    <None Include="Resources\rule4.png" />
+    <None Include="Resources\rule3.png" />
+    <None Include="Resources\rule2.png" />
+    <None Include="Resources\rule1.png" />
+    <None Include="Resources\prop1.png" />
+    <None Include="Resources\prev.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\reset.png" />
+    <None Include="Resources\tradeload.jpg" />
+    <None Include="Resources\p4win.gif" />
+    <None Include="Resources\p3win.gif" />
+    <None Include="Resources\p2win.gif" />
+    <None Include="Resources\stats.gif" />
+    <None Include="Resources\p1win.gif" />
+    <None Include="Resources\podium.png" />
+    <None Include="Resources\panel2.0.jpg" />
+    <None Include="Resources\p3.d_j.png" />
+    <None Include="Resources\p4.d_j.png" />
+    <None Include="Resources\p1.d_j.png" />
+    <None Include="Resources\p2.d_j.png" />
+    <None Include="Resources\p2.d_j %281%29.png" />
+    <None Include="Resources\Tiny Button Push-SoundBible.com-513260752.wav" />
+    <None Include="Resources\Tiny_Button_Push_SoundBible_com_513260752.wav" />
+    <None Include="Resources\Monopoly_Fav_banker_deal!.gif" />
+    <None Include="Resources\p4_d_j.png" />
+    <None Include="Resources\p1_d_j.png" />
+    <None Include="Resources\p2_d_j.png" />
+    <None Include="Resources\p3_d_j.png" />
+    <None Include="Resources\online-game.png" />
+    <None Include="Resources\movement.wav" />
+    <None Include="Resources\Meralco_r1.png" />
+    <None Include="Resources\zero_l.png" />
+    <None Include="Resources\zero.png" />
+    <None Include="Resources\winner p4.gif" />
+    <None Include="Resources\winner p3.gif" />
+    <None Include="Resources\whelp_t.png" />
+    <None Include="Resources\whelp_r.png" />
+    <None Include="Resources\whelp_l.png" />
+    <None Include="Resources\wheelp.png" />
+    <None Include="Resources\Western school_r.png" />
+    <None Include="Resources\Western school_l.png" />
+    <None Include="Resources\West Market_r.png" />
+    <None Include="Resources\West market_l.png" />
+    <None Include="Resources\vote_t.png" />
+    <None Include="Resources\vote_r.png" />
+    <None Include="Resources\vote_l.png" />
+    <None Include="Resources\vote.png" />
+    <None Include="Resources\Visayas hospital_r.png" />
+    <None Include="Resources\Visayas hospital_l.png" />
+    <None Include="Resources\Visayas highschool_r.png" />
+    <None Include="Resources\Visayas highschool_l.png" />
+    <None Include="Resources\VETERANS Hospital_r.png" />
+    <None Include="Resources\VETERANS Hospital_l.png" />
+    <None Include="Resources\two_t.png" />
+    <None Include="Resources\two_r.png" />
+    <None Include="Resources\two_l.png" />
+    <None Include="Resources\two.png" />
+    <None Include="Resources\Trinoma Station_r.png" />
+    <None Include="Resources\Trinoma Station_l.png" />
+    <None Include="Resources\trade_r.png" />
+    <None Include="Resources\trade_l.png" />
+    <None Include="Resources\ticket_r.png" />
+    <None Include="Resources\ticket_l.png" />
+    <None Include="Resources\three_t.png" />
+    <None Include="Resources\three_r.png" />
+    <None Include="Resources\three_l.png" />
+    <None Include="Resources\three.png" />
+    <None Include="Resources\TAX REFORM CARD_t.png" />
+    <None Include="Resources\TAX REFORM CARD_r.png" />
+    <None Include="Resources\TAX REFORM CARD_l.png" />
+    <None Include="Resources\TAX REFORM CARD.png" />
+    <None Include="Resources\system-update_r.png" />
+    <None Include="Resources\system-update_l.png" />
+    <None Include="Resources\sword_r.png" />
+    <None Include="Resources\sword_l.png" />
+    <None Include="Resources\student_t.png" />
+    <None Include="Resources\student_r.png" />
+    <None Include="Resources\student_l.png" />
+    <None Include="Resources\student.png" />
+    <None Include="Resources\Star market_r.png" />
+    <None Include="Resources\Star market_l.png" />
+    <None Include="Resources\Southern highschool_r.png" />
+    <None Include="Resources\Southern highschool_l.png" />
+    <None Include="Resources\six_t.png" />
+    <None Include="Resources\six_r.png" />
+    <None Include="Resources\six_l.png" />
+    <None Include="Resources\six.png" />
+    <None Include="Resources\Shangrilla Mall_r.png" />
+    <None Include="Resources\Shangrilla Mall_l.png" />
+    <None Include="Resources\seven_t.png" />
+    <None Include="Resources\seven_r.png" />
+    <None Include="Resources\seven_l.png" />
+    <None Include="Resources\seven.png" />
+    <None Include="Resources\Santolan Station_r.png" />
+    <None Include="Resources\Santolan Station_l.png" />
+    <None Include="Resources\sale_r.png" />
+    <None Include="Resources\sale_l.png" />
+    <None Include="Resources\Rosevelt Station_r.png" />
+    <None Include="Resources\Rosevelt Station_l.png" />
+    <None Include="Resources\resign_r.png" />
+    <None Include="Resources\resign_l.png" />
+    <None Include="Resources\rent_t.png" />
+    <None Include="Resources\rent_r.png" />
+    <None Include="Resources\rent_l.png" />
+    <None Include="Resources\rent.png" />
+    <None Include="Resources\Quezon Station_r.png" />
+    <None Include="Resources\Quezon Station_l.png" />
+    <None Include="Resources\question_t.png" />
+    <None Include="Resources\question_r.png" />
+    <None Include="Resources\question_l.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\Pearl Mall_r.png" />
+    <None Include="Resources\Pearl Mall_l.png" />
+    <None Include="Resources\pay_r.png" />
+    <None Include="Resources\pay_l.png" />
+    <None Include="Resources\panel_r.png" />
+    <None Include="Resources\p4.t.png" />
+    <None Include="Resources\p4.r.png" />
+    <None Include="Resources\p4.l.png" />
+    <None Include="Resources\p4.d.png" />
+    <None Include="Resources\p3.t.png" />
+    <None Include="Resources\p3.r.png" />
+    <None Include="Resources\p3.l.png" />
+    <None Include="Resources\p3.d.png" />
+    <None Include="Resources\one_t.png" />
+    <None Include="Resources\one_r.png" />
+    <None Include="Resources\one_l.png" />
+    <None Include="Resources\nine_t.png" />
+    <None Include="Resources\nine_r.png" />
+    <None Include="Resources\nine_l.png" />
+    <None Include="Resources\nine.png" />
+    <None Include="Resources\Night market_r.png" />
+    <None Include="Resources\Night market_l.png" />
+    <None Include="Resources\Niagra Fall_r.png" />
+    <None Include="Resources\Niagra Fall_l.png" />
+    <None Include="Resources\National healths hospital_r.png" />
+    <None Include="Resources\National healths hospital_l.png" />
+    <None Include="Resources\Nation%27s highschool_r.png" />
+    <None Include="Resources\Nation%27s highschool_l.png" />
+    <None Include="Resources\mortgage_t.png" />
+    <None Include="Resources\mortgage_r.png" />
+    <None Include="Resources\mortgage_l.png" />
+    <None Include="Resources\mortgage.png" />
+    <None Include="Resources\Moon market_r.png" />
+    <None Include="Resources\Moon market_l.png" />
+    <None Include="Resources\Meralco_r.png" />
+    <None Include="Resources\Meralco_l.png" />
+    <None Include="Resources\Mega market_t.png" />
+    <None Include="Resources\Mega market_r.png" />
+    <None Include="Resources\Mega market_l.png" />
+    <None Include="Resources\Mega market.png" />
+    <None Include="Resources\Mega mall_r.png" />
+    <None Include="Resources\Mega mall_l.png" />
+    <None Include="Resources\meet.jpg" />
+    <None Include="Resources\Western school.png" />
+    <None Include="Resources\winner.gif" />
+    <None Include="Resources\winner p2.gif" />
+    <None Include="Resources\Western school_t.png" />
+    <None Include="Resources\West Market_t.png" />
+    <None Include="Resources\West Market.png" />
+    <None Include="Resources\Visayas hospital_t.png" />
+    <None Include="Resources\Visayas hospital.png" />
+    <None Include="Resources\Visayas highschool_t.png" />
+    <None Include="Resources\Visayas highschool.png" />
+    <None Include="Resources\VETERANS Hospital_t.png" />
+    <None Include="Resources\VETERANS Hospital.png" />
+    <None Include="Resources\Trinoma Station_t.png" />
+    <None Include="Resources\Trinoma Station.png" />
+    <None Include="Resources\trade_t.png" />
+    <None Include="Resources\trade.png" />
+    <None Include="Resources\ticket_t.png" />
+    <None Include="Resources\ticket.png" />
+    <None Include="Resources\system-update_t.png" />
+    <None Include="Resources\system-update.png" />
+    <None Include="Resources\sword_t.png" />
+    <None Include="Resources\sword.png" />
+    <None Include="Resources\Star market_t.png" />
+    <None Include="Resources\Star market.png" />
+    <None Include="Resources\Southern highschool_t.png" />
+    <None Include="Resources\Southern highschool.png" />
+    <None Include="Resources\Shangrilla Mall_t.png" />
+    <None Include="Resources\Shangrilla Mall.png" />
+    <None Include="Resources\Santolan Station_t.png" />
+    <None Include="Resources\Santolan Station.png" />
+    <None Include="Resources\sale_t.png" />
+    <None Include="Resources\sale.png" />
+    <None Include="Resources\Rosevelt Station_t.png" />
+    <None Include="Resources\Rosevelt Station.png" />
+    <None Include="Resources\resign_t.png" />
+    <None Include="Resources\resign.png" />
+    <None Include="Resources\Quezon Station_t.png" />
+    <None Include="Resources\Quezon Station.png" />
+    <None Include="Resources\Pearl Mall_t.png" />
+    <None Include="Resources\Pearl Mall.png" />
+    <None Include="Resources\pay_t.png" />
+    <None Include="Resources\pay.png" />
+    <None Include="Resources\panel.jpg" />
+    <None Include="Resources\p2.t.png" />
+    <None Include="Resources\p2.r.png" />
+    <None Include="Resources\p2.l.png" />
+    <None Include="Resources\p2.d.png" />
+    <None Include="Resources\p1.t.png" />
+    <None Include="Resources\p1.r.png" />
+    <None Include="Resources\p1.l.png" />
+    <None Include="Resources\p1.d.png" />
+    <None Include="Resources\one.png" />
+    <None Include="Resources\Night market_t.png" />
+    <None Include="Resources\Night market.png" />
+    <None Include="Resources\Niagra Fall_t.png" />
+    <None Include="Resources\Niagra Fall.png" />
+    <None Include="Resources\Nation%27s highschool_t.png" />
+    <None Include="Resources\Nation%27s highschool.png" />
+    <None Include="Resources\National healths hospital_t.png" />
+    <None Include="Resources\National healths hospital.png" />
+    <None Include="Resources\Moon market_t.png" />
+    <None Include="Resources\Moon market.png" />
+    <None Include="Resources\Meralco_t.png" />
+    <None Include="Resources\Meralco.png" />
+    <None Include="Resources\Mega mall_t.png" />
+    <None Include="Resources\Mega mall.png" />
+    <None Include="Resources\pvp.png" />
+    <None Include="Resources\multiplayer.png" />
+    <None Include="Resources\kisspng-computer-icons-sound-icon-volume-5ae7f3c98521e8.4195341015251506655453_75x62.png" />
+    <None Include="Resources\faq.png" />
+    <None Include="Resources\kisspng-computer-icons-sound-icon-volume-5ae7f3c98521e8.4195341015251506655453.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\kisspng-gear-data-icon-ppt-design-gear-icon-5a80761cd85096.6031217115183682848861.png" />
+    <None Include="Resources\3QAxNZGm.gif" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\advertising.png" />
+    <None Include="Resources\advertising_t.png" />
+    <None Include="Resources\Artic mall.png" />
+    <None Include="Resources\Artic mall_t.png" />
+    <None Include="Resources\auc.jpg" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\back_t.png" />
+    <None Include="Resources\bail %281%29.png" />
+    <None Include="Resources\bail%281%29_t.png" />
+    <None Include="Resources\bitcoin.png" />
+    <None Include="Resources\bitcoin_t.png" />
+    <None Include="Resources\Day market.png" />
+    <None Include="Resources\Day market_t.png" />
+    <None Include="Resources\dice.png" />
+    <None Include="Resources\dice_t.png" />
+    <None Include="Resources\Eastern School Purple.png" />
+    <None Include="Resources\Eastern School Purple_t.png" />
+    <None Include="Resources\Hearts hospital.png" />
+    <None Include="Resources\Hearts hospital_t.png" />
+    <None Include="Resources\Heavenly mall.png" />
+    <None Include="Resources\Heavenly mall_t.png" />
+    <None Include="Resources\Hobert%27s hospital.png" />
+    <None Include="Resources\Hobert%27s hospital_t.png" />
+    <None Include="Resources\Intern%27s hospital.png" />
+    <None Include="Resources\Intern%27s hospital_t.png" />
+    <None Include="Resources\1 star.png" />
+    <None Include="Resources\1 star_l.png" />
+    <None Include="Resources\1 star_r.png" />
+    <None Include="Resources\1 star_t.png" />
+    <None Include="Resources\2 stars.png" />
+    <None Include="Resources\2 stars_l.png" />
+    <None Include="Resources\2 stars_r.png" />
+    <None Include="Resources\2 stars_t.png" />
+    <None Include="Resources\3 stars.png" />
+    <None Include="Resources\3 stars_l.png" />
+    <None Include="Resources\3 stars_r.png" />
+    <None Include="Resources\3 stars_t.png" />
+    <None Include="Resources\4 stars.png" />
+    <None Include="Resources\4 stars_l.png" />
+    <None Include="Resources\4 stars_r.png" />
+    <None Include="Resources\4 stars_t.png" />
+    <None Include="Resources\advertising_l.png" />
+    <None Include="Resources\advertising_r.png" />
+    <None Include="Resources\Artic mall_l.png" />
+    <None Include="Resources\Artic mall_r.png" />
+    <None Include="Resources\auction.png" />
+    <None Include="Resources\auction_l.png" />
+    <None Include="Resources\auction_r.png" />
+    <None Include="Resources\auction_t.png" />
+    <None Include="Resources\back card.png" />
+    <None Include="Resources\back card_l.png" />
+    <None Include="Resources\back card_r.png" />
+    <None Include="Resources\back card_t.png" />
+    <None Include="Resources\back_l.png" />
+    <None Include="Resources\back_r.png" />
+    <None Include="Resources\bail %281%29_l.png" />
+    <None Include="Resources\bail %281%29_r.png" />
+    <None Include="Resources\bank.png" />
+    <None Include="Resources\bank_l.png" />
+    <None Include="Resources\bank_r.png" />
+    <None Include="Resources\bank_t.png" />
+    <None Include="Resources\bankrupt.png" />
+    <None Include="Resources\bankrupt_l.png" />
+    <None Include="Resources\bankrupt_r.png" />
+    <None Include="Resources\bankrupt_t.png" />
+    <None Include="Resources\bd.png" />
+    <None Include="Resources\bitcoin_l.png" />
+    <None Include="Resources\bitcoin_r.png" />
+    <None Include="Resources\bus.png" />
+    <None Include="Resources\bus_l.png" />
+    <None Include="Resources\bus_r.png" />
+    <None Include="Resources\bus_t.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\check_l.png" />
+    <None Include="Resources\check_r.png" />
+    <None Include="Resources\check_t.png" />
+    <None Include="Resources\Day market_l.png" />
+    <None Include="Resources\Day market_r.png" />
+    <None Include="Resources\demolish.png" />
+    <None Include="Resources\demolish_l.png" />
+    <None Include="Resources\demolish_r.png" />
+    <None Include="Resources\demolish_t.png" />
+    <None Include="Resources\dice_l.png" />
+    <None Include="Resources\dice_r.png" />
+    <None Include="Resources\dice-rolling-1.jpg" />
+    <None Include="Resources\dice-rolling-2.jpg" />
+    <None Include="Resources\dice-rolling-3.jpg" />
+    <None Include="Resources\dice-rolling-4.jpg" />
+    <None Include="Resources\dice-rolling-5.jpg" />
+    <None Include="Resources\dice-rolling-6.jpg" />
+    <None Include="Resources\dice-rolling-6_r.png" />
+    <None Include="Resources\Eastern School Purple_l.png" />
+    <None Include="Resources\Eastern School Purple_r.png" />
+    <None Include="Resources\eight.png" />
+    <None Include="Resources\eight_l.png" />
+    <None Include="Resources\eight_r.png" />
+    <None Include="Resources\eight_t.png" />
+    <None Include="Resources\eraser.png" />
+    <None Include="Resources\eraser_l.png" />
+    <None Include="Resources\eraser_r.png" />
+    <None Include="Resources\eraser_t.png" />
+    <None Include="Resources\exit_t.png" />
+    <None Include="Resources\exit1.png" />
+    <None Include="Resources\exit1_l.png" />
+    <None Include="Resources\exit1_r.png" />
+    <None Include="Resources\five.png" />
+    <None Include="Resources\five_l.png" />
+    <None Include="Resources\five_r.png" />
+    <None Include="Resources\five_t.png" />
+    <None Include="Resources\four.png" />
+    <None Include="Resources\four_l.png" />
+    <None Include="Resources\four_r.png" />
+    <None Include="Resources\four_t.png" />
+    <None Include="Resources\freeze.png" />
+    <None Include="Resources\go.png" />
+    <None Include="Resources\go_l.png" />
+    <None Include="Resources\go_r.png" />
+    <None Include="Resources\go_t.png" />
+    <None Include="Resources\green.jpg" />
+    <None Include="Resources\happy.png" />
+    <None Include="Resources\happy_l.png" />
+    <None Include="Resources\happy_r.png" />
+    <None Include="Resources\happy_t.png" />
+    <None Include="Resources\Hearts hospital_l.png" />
+    <None Include="Resources\Hearts hospital_r.png" />
+    <None Include="Resources\Heavenly mall_l.png" />
+    <None Include="Resources\Heavenly mall_r.png" />
+    <None Include="Resources\Hobert%27s hospital_l.png" />
+    <None Include="Resources\Hobert%27s hospital_r.png" />
+    <None Include="Resources\Intern%27s hospital_l.png" />
+    <None Include="Resources\Intern%27s hospital_r.png" />
+    <None Include="Resources\33.wav" />
+    <None Include="Resources\bankrushscrn.jpg" />
+    <None Include="Resources\freeplayscrn.jpg" />
+    <None Include="Resources\aucscrn.jpg" />
+    <None Include="Resources\freetoplayscrn.jpg" />
+    <None Include="Resources\insufficient-funds.png" />
+    <None Include="Resources\insuffiecient-funds_t.png" />
+    <None Include="Resources\gotojail _r.png" />
+    <None Include="Resources\gotojail_t.png" />
+    <None Include="Resources\gotojail.png" />
+    <None Include="Resources\gotojail_l.png" />
+    <None Include="Resources\cardd_t.png" />
+    <None Include="Resources\cardd_l.png" />
+    <None Include="Resources\cardd_r.png" />
+    <None Include="Resources\cardd.png" />
+    <None Include="Resources\LOading screen.gif" />
+    <None Include="Resources\Fav_CLOSED!!.gif" />
+    <None Include="Resources\Fav_CLOSED!!_l.gif" />
+    <None Include="Resources\Fav_CLOSED!!_t.gif" />
+    <None Include="Resources\Fav_CLOSED!!_r.gif" />
+    <None Include="Resources\backse.wav" />
+    <None Include="Resources\gamefeature1.png" />
+    <None Include="Resources\instruction1.png" />
+    <None Include="Resources\instruction2.png" />
+    <None Include="Resources\instruction3.png" />
+    <None Include="Resources\instruction4.png" />
+    <None Include="Resources\instruction5.png" />
+    <None Include="Resources\instruction6.png" />
+    <None Include="Resources\instruction7.png" />
+    <None Include="Resources\Bd layout.png" />
+    <None Include="Resources\auction.wav" />
+    <None Include="Resources\backed.wav" />
+    <None Include="Resources\bankrupt.wav" />
+    <None Include="Resources\demolish.wav" />
+    <None Include="Resources\jail.wav" />
+    <None Include="Resources\jump.wav" />
+    <None Include="Resources\freeze.wav" />
+    <None Include="Resources\buy.wav" />
+    <None Include="Resources\card.wav" />
+    <None Include="Resources\bad.wav" />
+    <None Include="Resources\good.wav" />
+    <None Include="Resources\loading screen.jpg" />
+    <None Include="Resources\gameman8.PNG" />
+    <None Include="Resources\gameman9.PNG" />
+    <None Include="Resources\gameman10.PNG" />
+    <None Include="Resources\gameman11.PNG" />
+    <None Include="Resources\gameman1.PNG" />
+    <None Include="Resources\gameman2.PNG" />
+    <None Include="Resources\gameman3.PNG" />
+    <None Include="Resources\gameman4.png" />
+    <None Include="Resources\gameman5.PNG" />
+    <None Include="Resources\gameman6.PNG" />
+    <None Include="Resources\gameman7.PNG" />
+    <None Include="Resources\gamerul8.PNG" />
+    <None Include="Resources\gamerul2.PNG" />
+    <None Include="Resources\gamerul3.PNG" />
+    <None Include="Resources\gamerul4.PNG" />
+    <None Include="Resources\gamerul5.PNG" />
+    <None Include="Resources\gamerul6.PNG" />
+    <None Include="Resources\gamerul7.PNG" />
+    <None Include="Resources\gamerul1.PNG" />
+    <None Include="Resources\didyou11.gif" />
+    <None Include="Resources\didyou10.gif" />
+    <None Include="Resources\didyou9.gif" />
+    <None Include="Resources\didyouknow.gif" />
+    <None Include="Resources\didyou8.gif" />
+    <None Include="Resources\didyou7.gif" />
+    <None Include="Resources\guide2.gif" />
+    <None Include="Resources\guided1.gif" />
+    <None Include="Resources\didyou6.gif" />
+    <None Include="Resources\didyou5.gif" />
+    <None Include="Resources\didyou4.gif" />
+    <None Include="Resources\didyou3.gif" />
+    <None Include="Resources\didyou2.gif" />
+    <None Include="Resources\didyou1.gif" />
+    <None Include="Resources\bus station.png" />
+    <None Include="Resources\hospital.png" />
+    <None Include="Resources\hospital_r.png" />
+    <None Include="Resources\hospital_t.png" />
+    <None Include="Resources\hospital_l.png" />
+    <None Include="Resources\bus station_r.png" />
+    <None Include="Resources\bus station_t.png" />
+    <None Include="Resources\bus station_l.png" />
+    <None Include="Resources\house.png" />
+    <None Include="Resources\house_r.png" />
+    <None Include="Resources\house_t.png" />
+    <None Include="Resources\house_l.png" />
+    <None Include="Resources\insuffiecient-funds _r.png" />
+    <None Include="Resources\insuffiecient-funds _l.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\deadline.png" />
+    <None Include="Resources\12.wav" />
+    <Content Include="Resources\Main Menu.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\109-1095591_no-audio-icon-free-download-png-and-vector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
